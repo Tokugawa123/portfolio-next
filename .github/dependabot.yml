@@ -1,0 +1,23 @@
+---
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+      day: monday
+      time: '10:00'
+      timezone: Asia/Singapore
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: '10:00'
+      timezone: Asia/Singapore
+    commit-message:
+      prefix: 'Yarn prod'
+      prefix-development: 'Yarn dev'
+      include: 'scope'
+    pull-request-branch-name:
+      separator: '-'

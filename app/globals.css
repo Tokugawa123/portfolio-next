@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply overflow-x-hidden;
+  }
+
+  root,
+  body {
+    @apply m-0 box-border overflow-x-hidden overflow-y-hidden bg-white-400 p-0 transition-colors duration-300 ease-out dark:bg-black-300;
+  }
+
+  h1 {
+    @apply font-mont text-2xl font-semibold text-black-200 transition-colors duration-300 ease-out dark:text-white-300;
+  }
+
+  h2 {
+    @apply font-mont text-lg font-medium text-black-200 transition-colors duration-300 ease-out dark:text-white-100;
+  }
+
+  a {
+    @apply text-aqua no-underline hover:underline hover:underline-offset-4 dark:text-orange;
+  }
+}
+
+@layer components {
+  .navbar-gradient {
+    @apply absolute -top-64 -left-20 -z-20 h-[20rem] w-[4000px] -rotate-6 bg-gradient-to-b from-blue-gradient-1 to-blue-gradient-2 transition-bgi duration-300 ease-out dark:from-black-300 dark:to-black-300 md:-left-40 md:h-[31.25rem] xl:-top-80 xl:h-[37.5rem] 2xl:h-[43.75rem] 3xl:h-[50rem];
+  }
+
+  .dark-blue-gradient {
+    @apply absolute -top-56 -left-[4.5rem] -z-10 h-[120%] w-[4000px] -rotate-6 bg-dark-blue transition-colors duration-300 ease-out dark:bg-black-300 ipad-mini:h-[125%] lg:h-[135%] xl:h-[135%] 2xl:h-[145%] 3xl:h-[160%];
+  }
+
+  .dark-blue-section {
+    @apply relative z-0 bg-dark-blue;
+  }
+
+  .navbar-text {
+    @apply font-mont text-base font-bold tracking-widest text-black-200 dark:text-white-400 xl:text-xl;
+  }
+
+  .span-heading {
+    @apply ml-3 bg-transparent bg-gradient-to-r from-blue to-blue bg-clip-text text-transparent transition-bgi duration-300 ease-out dark:bg-dance-to-forget;
+  }
+
+  .dark-blue-container {
+    @apply relative mx-auto mb-32 h-full w-11/12 max-w-7xl pt-8 pr-20 text-white-300 sm:pr-36 md:grid md:grid-cols-3 md:place-items-start md:pr-0;
+  }
+
+  .about-me-text {
+    @apply mb-5 text-base font-normal transition-colors duration-300 ease-out dark:text-white-100 md:col-span-2 md:mb-0 md:text-lg xl:text-xl;
+  }
+
+  .about-me-animation {
+    @apply absolute -top-16 -right-12 h-44 w-44 dark:-top-0 dark:-right-0 dark:h-[7rem] dark:w-[7rem] md:static md:col-start-3 md:col-end-4 md:row-start-1 md:row-end-6 md:h-72 md:w-72 md:place-self-center dark:md:right-12 dark:md:-top-16 dark:md:h-[10rem] dark:md:w-[10rem] lg:col-start-3 lg:h-[22rem] lg:w-[22rem] dark:lg:h-[13rem] dark:lg:w-[13rem] xl:h-[28rem] xl:w-[28rem];
+  }
+
+  .white-bg-heading {
+    @apply text-xl font-bold md:mb-6 md:text-3xl xl:text-4xl;
+  }
+
+  .white-sub-heading {
+    @apply mb-2 transition-colors duration-300 ease-out dark:text-white-300 md:text-2xl xl:mb-4 xl:text-3xl;
+  }
+
+  .icon {
+    @apply text-black-200 dark:text-white-500;
+  }
+}
